@@ -109,19 +109,18 @@ An intelligent Kubernetes cluster observability platform that captures live tele
 - **Automated Alerting:** Dispatches real-time email notifications for critical incidents and performance degradation.
 
 ```mermaid
-flowchart TB
+flowchart LR
     subgraph CLUSTER["Kubernetes Cluster"]
-        direction LR
         N["Nodes"]
         P["Pods"]
     end
-    N --> EXP["node-exporter /<br/>kube-state-metrics"]
+    N --> EXP["node-exporter / kube-state-metrics"]
     P --> EXP
-    EXP --> PROM[("Prometheus")]
-    PROM -->|"24+ PromQL"| ENG["Python Metric Engine"]
-    ENG --> GEM["Gemini AI"]
-    ENG --> CHK{"Threshold<br/>breached?"}
-    GEM --> SUM["Diagnostic Summary"]
+    EXP --> PROM[("Prometheus TSDB")]
+    PROM -->|"24+ PromQL queries"| ENG["Python Metric Engine"]
+    ENG --> GEM["Google Gemini AI"]
+    GEM --> SUM["Diagnostic Summary &amp; Anomaly Trends"]
+    ENG --> CHK{"Threshold breached?"}
     CHK -->|"yes"| MAIL["Email Alert"]
     SUM --> MAIL
 ```
@@ -147,16 +146,16 @@ A production-grade, declarative CI/CD and GitOps delivery pipeline integrating a
 - **GitOps Continuous Delivery:** Integrated **Argo CD** for continuous reconciliation and automated sync between the Git repository and live Kubernetes cluster.
 
 ```mermaid
-flowchart TB
-    DEV["Developer"] -->|"git push"| SRC[("App Git Repo")]
+flowchart LR
+    DEV["Developer"] -->|"git push"| SRC[("Application Git Repo")]
     SRC --> JEN["Jenkins Pipeline"]
-    JEN --> MVN["Maven Build &amp; Test"]
-    MVN --> SON["SonarQube Gate"]
+    JEN --> MVN["Maven Build &amp; Unit Tests"]
+    MVN --> SON["SonarQube Quality &amp; Security Gate"]
     SON --> DKR["Docker Build &amp; Tag"]
     DKR --> REG[("Image Registry")]
-    JEN -->|"bump image tag"| HELM[("Helm / Config Repo")]
+    JEN -->|"bump image tag"| HELM[("Helm Chart / Config Repo")]
     HELM --> ARGO["Argo CD"]
-    ARGO -->|"auto-sync"| K8S["Kubernetes Cluster"]
+    ARGO -->|"auto-sync &amp; reconcile"| K8S["Kubernetes Cluster"]
     REG -->|"image pull"| K8S
 ```
 
