@@ -8,7 +8,9 @@
   📍 <strong>Bengaluru, India</strong> &nbsp; | &nbsp; ✉️ <strong>naveenreddyyaparla9@gmail.com</strong> &nbsp; | &nbsp; 📱 <strong>+91 9493923026</strong>
 </p>
 
+<!-- Social, Contact & Resume Badges -->
 <p align="center">
+  <a href="https://github.com/VenkataNaveenReddyYaparla/VenkataNaveenReddyYaparla/blob/main/Venkata_Naveen_Reddy_Yaparla_Resume.pdf" target="_blank"><img src="https://img.shields.io/badge/Resume-Download_PDF-E63946?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download Resume" /></a>
   <a href="https://linkedin.com/in/naveenreddyyaparla" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:naveenreddyyaparla9@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/VenkataNaveenReddyYaparla"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
@@ -96,15 +98,16 @@
 
 ---
 
-## 🚀 Featured Project
+## 🚀 Featured Projects
 
 <table>
+  <!-- Project 1 -->
   <tr>
     <td width="100%">
       <h3>🤖 <a href="https://github.com/VenkataNaveenReddyYaparla/k8s-cluster-monitoring-with-ai">Kubernetes Cluster Monitoring with AI</a></h3>
-      <p>An AI-powered Kubernetes observability and monitoring tool that executes 24+ PromQL queries across node health, pod status, CPU/memory, disk usage, and network metrics, summarizing insights via Google Gemini and alerting via email.</p>
+      <p>An intelligent Kubernetes cluster observability platform that captures live telemetry across nodes and pods, analyzes cluster health using PromQL, and leverages Google Gemini AI for diagnostic summaries and automated alerts.</p>
       <ul>
-        <li><b>PromQL Metric Engine:</b> Executes 24+ PromQL queries across node health, pod status, CPU/memory, disk usage, and network metrics.</li>
+        <li><b>PromQL Metric Engine:</b> Executes 24+ PromQL queries analyzing node health, pod statuses, CPU/memory saturation, disk I/O, and network metrics.</li>
         <li><b>AI-Powered Diagnostics:</b> Summarizes diagnostic insights and anomaly trends using <b>Google Gemini AI</b>.</li>
         <li><b>Automated Alerting:</b> Dispatches real-time email notifications for critical incidents and performance degradation.</li>
       </ul>
@@ -116,6 +119,49 @@
         <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
       </p>
       <a href="https://github.com/VenkataNaveenReddyYaparla/k8s-cluster-monitoring-with-ai"><b>View GitHub Repository →</b></a>
+    </td>
+  </tr>
+
+  <!-- Project 2 -->
+  <tr>
+    <td width="100%">
+      <h3>🔄 <a href="https://github.com/VenkataNaveenReddyYaparla/Jenkins_E2E_CICD/tree/main/java-maven-sonar-argocd-helm-k8s">End-to-End GitOps CI/CD Pipeline for Java Microservices</a></h3>
+      <p>A production-grade, declarative CI/CD and GitOps delivery pipeline integrating automated builds, static code quality analysis, vulnerability scanning, and Helm-based zero-downtime deployment to Kubernetes via Argo CD.</p>
+      <ul>
+        <li><b>Continuous Integration:</b> Orchestrated automated build and packaging via <b>Maven</b> with static code quality and security gate enforcement via <b>SonarQube</b>.</li>
+        <li><b>Containerization & Helm:</b> Automated Docker image creation, tagging, and parameter-driven Helm chart templating for Kubernetes deployments.</li>
+        <li><b>GitOps Continuous Delivery:</b> Integrated <b>Argo CD</b> for continuous reconciliation and automated sync between the Git repository and live Kubernetes cluster.</li>
+      </ul>
+      <p>
+        <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white" alt="Jenkins" />
+        <img src="https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat-square&logo=argo&logoColor=white" alt="Argo CD" />
+        <img src="https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white" alt="Helm" />
+        <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white" alt="SonarQube" />
+        <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+      </p>
+      <a href="https://github.com/VenkataNaveenReddyYaparla/Jenkins_E2E_CICD/tree/main/java-maven-sonar-argocd-helm-k8s"><b>View Pipeline Architecture & Code →</b></a>
+    </td>
+  </tr>
+
+  <!-- Project 3 -->
+  <tr>
+    <td width="100%">
+      <h3>☁️ <a href="https://github.com/VenkataNaveenReddyYaparla/App_deployment_in_aws_vpc">High-Availability Multi-Tier App Deployment in AWS VPC</a></h3>
+      <p>An enterprise-grade, secure cloud infrastructure architecture provisioning a multi-tier application environment in custom AWS VPC with isolated public/private networking and high availability.</p>
+      <ul>
+        <li><b>Network Architecture:</b> Custom <b>AWS VPC</b> designed across multiple Availability Zones with public and private subnets, Internet Gateway, and NAT Gateway.</li>
+        <li><b>Traffic Routing & Security:</b> Configured <b>Application Load Balancer (ALB)</b>, Route53 DNS management, strict Security Groups, and least-privilege IAM roles.</li>
+        <li><b>Resilient Hosting:</b> Secure backend instance provisioning in private subnets with health checks and zero direct internet exposure.</li>
+      </ul>
+      <p>
+        <img src="https://img.shields.io/badge/AWS_VPC-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" alt="VPC" />
+        <img src="https://img.shields.io/badge/Application_Load_Balancer-FF9900?style=flat-square&logo=amazon-aws&logoColor=white" alt="ALB" />
+        <img src="https://img.shields.io/badge/Amazon_EC2-FF9900?style=flat-square&logo=amazon-aws&logoColor=white" alt="EC2" />
+        <img src="https://img.shields.io/badge/Route53-232F3E?style=flat-square&logo=amazon-aws&logoColor=white" alt="Route53" />
+        <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+      </p>
+      <a href="https://github.com/VenkataNaveenReddyYaparla/App_deployment_in_aws_vpc"><b>View VPC Deployment & Documentation →</b></a>
     </td>
   </tr>
 </table>
@@ -168,6 +214,7 @@ Open to discussing cloud infrastructure, Kubernetes, DevOps automation, and new 
 <br/>
 
 <p align="center">
+  <a href="https://github.com/VenkataNaveenReddyYaparla/VenkataNaveenReddyYaparla/blob/main/Venkata_Naveen_Reddy_Yaparla_Resume.pdf" target="_blank"><img src="https://img.shields.io/badge/Resume-View_PDF-E63946?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Resume PDF" /></a>
   <a href="https://linkedin.com/in/naveenreddyyaparla" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:naveenreddyyaparla9@gmail.com"><img src="https://img.shields.io/badge/Email-Send_Message-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://github.com/VenkataNaveenReddyYaparla"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
